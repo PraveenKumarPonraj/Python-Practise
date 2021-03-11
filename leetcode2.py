@@ -52,4 +52,4 @@ def romanToDecimal(str):
  
 # Driver code
 print("Integer form of Roman Numeral is"),
-print(romanToDecimal("I"))
+print(romanToDecimal("MCMIV"))

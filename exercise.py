@@ -1,10 +1,12 @@
-def input_user():
-    log_list = []
-    start = 0
-    end = 5
-    user_input=int(input("Enter the floor you want to go:"))
-    
+log_list = []
+start = 0
+end = 5
 
+def input_user():    
+    user_input=int(input("Enter the floor you want to go:"))
+
+    
+def my_function(user_input):
     if(start < user_input):
         print(" You are in ", user_input, "floor")
         log_list.append(user_input)
@@ -21,12 +23,9 @@ def input_user():
     print(" Log list:", log_list)
     if(user_input >= 5):
         print(" Incorrect,please try again")
-    return input_user
-
-
-
+    return True
 
 
 if __name__ == "__main__":
-   
-    input_user()
+    num = input_user()
+    check_func = my_function(num)
